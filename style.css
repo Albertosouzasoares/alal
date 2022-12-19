@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --cor-preto: #202020;
+    --cor-escuro: #606060;
+    --cor-branco: #F0F0F0;
+
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-Open-Sans: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-preto);
+    height: 100vh;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    max-width: 600px;
+    margin: 26px auto;
+    background-color: var(--cor-escuro);
+    border: 2px solid var(--cor-branco);
+    display: flex;  
+    border-radius: 33px;
+    transition: 0.5s;
+}
+
+.section:hover {
+    background-color: var(--cor-branco);
+}
+
+.section a {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branco);
+    font-size: 18px;
+    width: 100%;
+    padding: 12px 20px;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.section a:hover {
+    color: var(--cor-preto);
+}
+
+.section h2 {
+    font-family: var(--font-montserrat);
+    text-transform: uppercase;
+}
+
+.section div {
+    display: flex;
+    align-items: center;
+}
+
+.section ion-icon {
+    display: flex;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+/*Outras Pagínas*/
+.main {
+    max-width: 600px;
+    margin: auto;
+}
+
+.main > div {
+    margin: 20px 0px;
+    background-color: var(--cor-escuro);
+    border: 2px solid var(--cor-branco);
+    border-radius: 33px;
+}
+
+h3 {
+    color: var(--cor-branco);
+    font-family: var(--font-Open-Sans);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.main > div > div > div {
+    display: flex;
+    align-items: center;
+}
+
+.main > div > div > div > input, label {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main > div > div > div > label:hover {
+    color: var(--cor-preto);
+}
+
+.main > div > input {
+    border-radius: 33px 33px 0px 0px;
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+input::placeholder {
+    color: var(--cor-branco);
+}
+
+.main > div > input, label {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: var(--font-Open-Sans);
+    color: var(--cor-branco);
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--cor-escuro);
+    border: 2px solid var(--cor-branco);
+    border-radius: 33px;
+    transition: 0.5s;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: var(--font-Open-Sans);
+    color: var(--cor-branco);
+}
+
+button:hover {
+    background-color: var(--cor-branco);
+    color: #202020;
+}
+
+button.button {
+    border-radius: 0px 0px 30px 30px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POST</title>
+</head>
+<body>
+    <main class="main">
+        <div id="box1">
+            <input type="text" name="nome" id="nome" placeholder="Nome do Arquivo" autocomplete="off">
+
+            <button class="button" onclick="nome()">Verificar</button>
+        </div>
+
+        <div id="box2">
+            <h3>Tamanho</h3>
+
+            <div style="padding: 4px 20px;">
+                <div>
+                    <input type="radio" name="tamanho" id="px_1080">
+                    <label for="px_1080">1080x1080</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="tamanho" id="px_1200">
+                    <label for="px_1200">1200x556</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="tamanho" id="px_1350">
+                    <label for="px_1350">1350x1080</label>
+                </div>
+            </div>
+
+            <button class="button" onclick="tamanho()">Verificar</button>
+        </div>
+
+        <div id="box3">
+            <h3>Onde Publicar</h3>
+
+            <div style="padding: 4px 20px;">
+                <div>
+                    <input type="radio" name="publicar" id="instagram">
+                    <label for="instagram">Instagram</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="publicar" id="facebook">
+                    <label for="facebook">Facebook</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="publicar" id="youtube">
+                    <label for="youtube">YouTube</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="publicar" id="tiktok">
+                    <label for="tiktok">Tik Tok</label>
+                </div>
+            </div>
+
+            <button class="button" onclick="ondePublicar()">Verificar</button>
+        </div>
+
+        <div id="box4">
+            <h3>Tipo</h3>
+
+            <div style="padding: 4px 20px;">
+                <div>
+                    <input type="radio" name="tipo" id="normal">
+                    <label for="normal">Normal</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="tipo" id="carrossel">
+                    <label for="carrossel">Carrossel</label>
+                </div>
+            </div>
+
+            <button class="button" onclick="tipo()">Verificar</button>
+        </div>
+
+        <div id="box5">
+            <h3>Estilo</h3>
+
+            <div style="padding: 4px 20px;">
+                <div>
+                    <input type="radio" name="estilo" id="original">
+                    <label for="original">Original</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="estilo" id="designer">
+                    <label for="designer">Designer</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="estilo" id="pretobranco">
+                    <label for="pretobranco">Preto e Branco</label>
+                </div>
+            </div>
+
+            <button class="button" onclick="estilo()">Verificar</button>
+        </div>
+
+        <div id="box6">
+            <input type="text" name="tema" id="tema" placeholder="Tema" autocomplete="off">
+
+            <button class="button" onclick="tema()">Verificar</button>
+        </div>
+
+        <div id="box7">
+            <input type="text" name="titulo" id="titulo" placeholder="Título" autocomplete="off" maxlength="60">
+
+            <button class="button" onclick="titulo()">Verificar</button>
+        </div>
+
+        <div id="box8">
+            <input type="date" name="data" id="data">
+
+            <button class="button" onclick="data()">Verificar</button>
+        </div>
+
+        <div id="box9">
+            <input type="text" name="conteudo" id="conteudo" placeholder="Contéudo" autocomplete="off">
+
+            <button class="button" onclick="conteudo()">Verificar</button>
+        </div>
+
+        <button onclick="download()">Download</button>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.js" integrity="sha512-B+gr+zLWg81qxVwvtYwKrmjvQtZKD/GGFF7jD80OfzbqFw+NsbS5faEqpCO7Q7oRw1bYi0+WLJf54j8Vm7NADw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
